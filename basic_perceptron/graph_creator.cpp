@@ -60,7 +60,7 @@ void structure_test_method() {
 class structuring {
 public:
 	structuring(weighted_graph<int> g) {
-		graph = g;
+		graph = &g;
 	}//constructor
 	
 	void structure_graph() {}//applys the methods below and attaches edges to weighted graph
@@ -83,7 +83,7 @@ private:
 
 void graph_creator::structure_edges() {
 	//structure_test_method();
-	structuring s;
+	structuring s = structuring(cgraph.graph);
 
 }
 
