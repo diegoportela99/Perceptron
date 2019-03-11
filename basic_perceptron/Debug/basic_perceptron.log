@@ -1,0 +1,83 @@
+﻿  graph_creator.cpp
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(19): warning C4091: 'typedef ': ignored on left of 'weighted_graph<vertex>::VertexC' when no variable is declared
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(74): note: see reference to class template instantiation 'weighted_graph<vertex>' being compiled
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\perceptron_properties.h(15): warning C4091: 'typedef ': ignored on left of 'perceptron_properties::node_value' when no variable is declared
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(19): warning C4091: 'typedef ': ignored on left of 'weighted_graph<int>::VertexC' when no variable is declared
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(14): note: see reference to class template instantiation 'weighted_graph<int>' being compiled
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(19): warning C4091: 'typedef ': ignored on left of 'controlled_graph' when no variable is declared
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(41): warning C4018: '<': signed/unsigned mismatch
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(80): warning C4018: '<': signed/unsigned mismatch
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(132): warning C4018: '<=': signed/unsigned mismatch
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(127): note: while compiling class template member function 'void weighted_graph<int>::add_edge(const vertex &,const vertex &,const int &)'
+          with
+          [
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(85): note: see reference to function template instantiation 'void weighted_graph<int>::add_edge(const vertex &,const vertex &,const int &)' being compiled
+          with
+          [
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(14): note: see reference to class template instantiation 'weighted_graph<int>' being compiled
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(157): warning C4018: '<': signed/unsigned mismatch
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(156): note: while compiling class template member function 'void weighted_graph<int>::remove_edge(const vertex &,const vertex &)'
+          with
+          [
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(92): note: see reference to function template instantiation 'void weighted_graph<int>::remove_edge(const vertex &,const vertex &)' being compiled
+          with
+          [
+              vertex=int
+          ]
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(265): warning C4018: '<': signed/unsigned mismatch
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(261): note: while compiling class template member function 'std::vector<int,std::allocator<_Ty>> weighted_graph<int>::depth_first(const vertex &)'
+          with
+          [
+              _Ty=int,
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(79): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>> weighted_graph<int>::depth_first(const vertex &)' being compiled
+          with
+          [
+              _Ty=int,
+              vertex=int
+          ]
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(80): warning C4018: '<': signed/unsigned mismatch
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(77): note: while compiling class template member function 'bool weighted_graph<int>::marked(vertex,int)'
+          with
+          [
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(266): note: see reference to function template instantiation 'bool weighted_graph<int>::marked(vertex,int)' being compiled
+          with
+          [
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(123): note: while compiling class template member function 'void weighted_graph<int>::add_vertex(const vertex &)'
+          with
+          [
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(43): note: see reference to function template instantiation 'void weighted_graph<int>::add_vertex(const vertex &)' being compiled
+          with
+          [
+              vertex=int
+          ]
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(89): warning C4018: '<': signed/unsigned mismatch
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(245): warning C4018: '<': signed/unsigned mismatch
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(242): note: while compiling class template member function 'std::vector<int,std::allocator<_Ty>> weighted_graph<int>::get_neighbours(const vertex &)'
+          with
+          [
+              _Ty=int,
+              vertex=int
+          ]
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(262): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>> weighted_graph<int>::get_neighbours(const vertex &)' being compiled
+          with
+          [
+              _Ty=int,
+              vertex=int
+          ]
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(247): warning C4018: '<': signed/unsigned mismatch
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(97): warning C4715: 'weighted_graph<int>::marked': not all control paths return a value
+  basic_perceptron.vcxproj -> C:\Users\diego\Desktop\Software Dev\C++\basic_perceptron\Debug\basic_perceptron.exe
