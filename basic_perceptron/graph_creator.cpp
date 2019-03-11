@@ -59,10 +59,26 @@ void structure_test_method() {
 // class that organizes the graph structure, adds the edges to the nodes and (experimental) also handles the remove of edges
 class structuring {
 public:
-	structuring() {}//constructor
+	structuring(weighted_graph<int> g) {
+		graph = g;
+	}//constructor
+	
+	void structure_graph() {}//applys the methods below and attaches edges to weighted graph
 
 private:
+	weighted_graph<int> *graph;
+	
 	std::vector<int> node_connection() {}
+	
+	void attach_first_layer() {} //attaches the first layer to the first layer of the hidden layer () ---> ()   () ... ()
+	void attach_hidden_layer() {} //attaches the hidden layers together (feed forward) ()  () ---> ()  ()
+	void attach_final_layer() {} //attaches the last hidden layer to the output
+	
+	//returns the bias
+	int apply_bias() {return 0;}
+	
+	//apply weight to edges of structure
+	int structure_weight() {return 0;}
 };
 
 void graph_creator::structure_edges() {
