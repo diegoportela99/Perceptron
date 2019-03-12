@@ -31,19 +31,26 @@ graph_creator::graph_creator(const int &input, const int &output, std::vector<in
 }
 
 void graph_creator::setup_graph() {
-	node_size(); //add the nodes to a graph
+	setup_node_size(); //add the nodes to a graph
 	structure_edges(); //structure edges to all the nodes created
 }
 
-void graph_creator::node_size() {
-	int sum = 0;
-	//get sum of nodes
-	for (int i = 0; i < cgraph.layers.size(); i++) { sum = sum + cgraph.layers[i]; }
-	int amount_of_nodes = cgraph.input + sum + cgraph.output;
-	for (int i = 0; i < amount_of_nodes; i++) { cgraph.graph.add_vertex(i); }
+void graph_creator::setup_node_size() {
+	if (!node_setup) {
+		int sum = 0;
+		//get sum of nodes
+		for (int i = 0; i < cgraph.layers.size(); i++) { sum = sum + cgraph.layers[i]; }
+		int amount_of_nodes = cgraph.input + sum + cgraph.output;
+		for (int i = 0; i < amount_of_nodes; i++) { cgraph.graph.add_vertex(i); }
 
-	np = CREATED_NODES; //set enum to created nodes
-	std::cout << "amount of nodes generated: " << amount_of_nodes << std::endl;
+		np = CREATED_NODES; //set enum to created nodes
+		std::cout << "amount of nodes generated: " << amount_of_nodes << std::endl;
+
+		node_setup = true;
+	}
+	else {
+		std::cout << "Error. Nodes have been setup already; skipping..." << std::endl;
+	}
 }
 
 bool graph_creator::single_layer() {
@@ -51,16 +58,11 @@ bool graph_creator::single_layer() {
 	return false;
 }
 
-//Testing method
-void structure_test_method() {
-
-}
-
 // class that organizes the graph structure, adds the edges to the nodes and (experimental) also handles the remove of edges
 class structuring {
 public:
-	structuring(weighted_graph<int> g) {
-		graph = &g;
+	structuring(weighted_graph<int> *g) { //pointer to memory location = &memory
+		graph = g; //use graph pointer as a pointer rather than the weighted_graph parameters
 	}//constructor
 	
 	void structure_graph() {}//applys the methods below and attaches edges to weighted graph
@@ -83,17 +85,16 @@ private:
 
 void graph_creator::structure_edges() {
 	//structure_test_method();
-	structuring s = structuring(cgraph.graph);
+	structuring s = structuring(&(cgraph.graph)); //passes the graph memory location to class
 
 }
-
 
 class testing_methods{
 public:
 	//Testing method
 	void dft_graph() {
 		std::vector<int> glist = cgraph.graph.depth_first(0);
-		for (int i = 0; i < glist.size(); i++) { std::cout << glist[i]; }
+		for (int i = 0; i < glist.size(); i++) { std::cout << glist[i] << std::endl; }
 	}
 
 	void structure_test() {

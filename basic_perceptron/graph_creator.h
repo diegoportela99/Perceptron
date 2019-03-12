@@ -20,8 +20,10 @@ public:
 	void structure_test();
 
 private:
+	bool node_setup = false;
+
 	bool single_layer(); //returns a bool if there is only one layer of the graph network
-	void node_size();
+	void setup_node_size();
 	void structure_edges();
 };
 

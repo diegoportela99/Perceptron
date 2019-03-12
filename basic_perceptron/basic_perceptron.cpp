@@ -3,20 +3,17 @@
 #include <iostream>
 #include "graph_creator.h"
 
-void graph_structuring() {
+void graph_testing() {
 	graph_creator g;
 	g.setup_graph();
 	g.dft_graph();
+	g.current_process();
 }
 
 int main()
 {
-	//graph_structuring();
+	graph_testing();
 
-	graph_creator g;
-	g.setup_graph();
-
-	g.current_process();
 	return 0;
 }
 

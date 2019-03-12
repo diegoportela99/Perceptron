@@ -5,15 +5,15 @@ c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\percep
 c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(19): warning C4091: 'typedef ': ignored on left of 'weighted_graph<int>::VertexC' when no variable is declared
   c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(14): note: see reference to class template instantiation 'weighted_graph<int>' being compiled
 c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(19): warning C4091: 'typedef ': ignored on left of 'controlled_graph' when no variable is declared
-c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(41): warning C4018: '<': signed/unsigned mismatch
-c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(96): warning C4018: '<': signed/unsigned mismatch
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(42): warning C4018: '<': signed/unsigned mismatch
+c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(102): warning C4018: '<': signed/unsigned mismatch
 c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(132): warning C4018: '<=': signed/unsigned mismatch
   c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weighted_graph.h(127): note: while compiling class template member function 'void weighted_graph<int>::add_edge(const vertex &,const vertex &,const int &)'
           with
           [
               vertex=int
           ]
-  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(101): note: see reference to function template instantiation 'void weighted_graph<int>::add_edge(const vertex &,const vertex &,const int &)' being compiled
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(107): note: see reference to function template instantiation 'void weighted_graph<int>::add_edge(const vertex &,const vertex &,const int &)' being compiled
           with
           [
               vertex=int
@@ -25,7 +25,7 @@ c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weight
           [
               vertex=int
           ]
-  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(108): note: see reference to function template instantiation 'void weighted_graph<int>::remove_edge(const vertex &,const vertex &)' being compiled
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(114): note: see reference to function template instantiation 'void weighted_graph<int>::remove_edge(const vertex &,const vertex &)' being compiled
           with
           [
               vertex=int
@@ -37,7 +37,7 @@ c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weight
               _Ty=int,
               vertex=int
           ]
-  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(95): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>> weighted_graph<int>::depth_first(const vertex &)' being compiled
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(101): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>> weighted_graph<int>::depth_first(const vertex &)' being compiled
           with
           [
               _Ty=int,
@@ -59,7 +59,7 @@ c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\weight
           [
               vertex=int
           ]
-  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(43): note: see reference to function template instantiation 'void weighted_graph<int>::add_vertex(const vertex &)' being compiled
+  c:\users\diego\desktop\software dev\c++\basic_perceptron\basic_perceptron\graph_creator.cpp(44): note: see reference to function template instantiation 'void weighted_graph<int>::add_vertex(const vertex &)' being compiled
           with
           [
               vertex=int
